@@ -1341,7 +1341,8 @@ void PrintConfigDef::init_fff_params()
         { "adaptivecubic",      L("Adaptive Cubic")},
         { "supportcubic",       L("Support Cubic")},
         { "lightning",          L("Lightning")},
-        { "fillsin",            L("Fillsin")}
+        { "fillsin",              "Fillsin"} // pour des raisons d'imcopetence ou de flemme on ne supporte pas la traduction
+                                            // pou partir sur les traces de L chercher I18N (aussis dans Slic3r)
     });
     def->set_default_value(new ConfigOptionEnum<InfillPattern>(ipStars));
 
